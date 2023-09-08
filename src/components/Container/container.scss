@@ -1,0 +1,72 @@
+// main vars
+$Light_Cyan: hsl(193, 38%, 86%);
+$Neon_Green: hsl(150, 100%, 66%);
+
+$Grayish_Blue: hsl(217, 19%, 38%);
+$Dark_Grayish_Blue: hsl(217, 19%, 24%);
+$Dark_Blue: hsl(218, 23%, 16%);
+
+#btn {
+  position: absolute;
+  bottom: 153px;
+  background-color: $Neon_Green;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 0px 17px 2px $Neon_Green;
+    transition: 0.5s;
+  }
+}
+
+#line_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#line_logo {
+  width: 70%;
+  height: 10px;
+}
+
+body {
+  background-color: $Dark_Blue;
+  font: {
+    family: "Manrope";
+  }
+}
+
+main {
+  max-width: 500px;
+}
+
+#container {
+  background-color: $Dark_Grayish_Blue;
+  h1 {
+    font: {
+      size: 15px;
+    }
+    color: $Neon_Green;
+
+    letter-spacing: 2.5px;
+  }
+  p {
+    color: white;
+    word-spacing: 4px;
+    font: {
+      size: 28px;
+    }
+    padding: 0px 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    padding: 20px 0px;
+    height: auto;
+  }
+  #btn {
+    bottom: 3%;
+  }
+}

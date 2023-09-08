@@ -1,0 +1,56 @@
+#btn {
+  position: absolute;
+  bottom: 153px;
+  background-color: hsl(150, 100%, 66%);
+  transition: 0.5s;
+}
+#btn:hover {
+  box-shadow: 0px 0px 17px 2px hsl(150, 100%, 66%);
+  transition: 0.5s;
+}
+
+#line_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#line_logo {
+  width: 70%;
+  height: 10px;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope";
+}
+
+main {
+  max-width: 500px;
+}
+
+#container {
+  background-color: hsl(217, 19%, 24%);
+}
+#container h1 {
+  font-size: 15px;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2.5px;
+}
+#container p {
+  color: white;
+  word-spacing: 4px;
+  font-size: 28px;
+  padding: 0px 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    padding: 20px 0px;
+    height: auto;
+  }
+  #btn {
+    bottom: 3%;
+  }
+}
